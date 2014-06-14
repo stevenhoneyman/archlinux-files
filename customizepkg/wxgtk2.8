@@ -1,0 +1,9 @@
+remove#depends#gstreamer0.10-base
+remove#makedepends#gstreamer0.10-base-plugins
+remove#makedepends#gconf
+add#options#!docs
+add#options#strip
+remove#global#make -C.*$
+remove#global#--enable-graphics_ctx
+remove#global#--disable-optimize
+replace#global#--enable-mediactrl#--disable-{mediactrl,webview,debug} --without-{libnotify,gnomevfs,gnomeprint}

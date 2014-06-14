@@ -1,0 +1,3 @@
+remove#depends#libpulse
+replace#global#PULSEAUDIO=ON#PULSEAUDIO=OFF
+replace#global#make.*install#& \\n rm -rf "$pkgdir/usr/include"

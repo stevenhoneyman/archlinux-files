@@ -1,0 +1,1 @@
+replace#global#\.\/configure#sed -i 's\/256x256\/\/g' configure \\n \.\/configure  --disable-nls

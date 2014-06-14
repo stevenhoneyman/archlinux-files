@@ -1,0 +1,20 @@
+remove#makedepends#ghostscript
+remove#makedepends#libwmf
+remove#makedepends#openexr
+remove#makedepends#libwebp
+remove#depends#perl
+add#depends#openjpeg2
+replace#global#--with-modules#--disable-docs
+replace#global#--enable-hdri#--disable-hdri
+replace#global#--with-wmf#--without-wmf
+replace#global#--with-openexr#--without-openexr
+replace#global#--with-xml#--without-xml
+replace#global#--with-lcms2#--without-lcms2
+replace#global#--with-webp#--without-webp
+replace#global#--with-perl --with-perl-options="INSTALLDIRS=vendor"#--without-perl
+replace#global#--with-rsvg#--without-rsvg
+replace#global#--with-gslib --with-gs-font-dir=\/usr\/share\/fonts\/Type1#--without-gslib
+replace#global#--without-fftw#& --without-magick-plus-plus --with-quantum-depth=8 
+add#options#strip
+remove#global#-j1
+replace#global#Cleaning#& \\n rm -f "${pkgdir}"\/usr\/share\/ImageMagick-6\/francais.xml \\n rm -rf "${pkgdir}"\/usr\/include \\n rm -rf "${pkgdir}"\/usr\/lib\/ImageMagick-6.8.9 \\n  rm -f "${pkgdir}"\/usr\/bin\/*-config

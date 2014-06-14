@@ -1,0 +1,3 @@
+remove#depends#python
+remove#depends#python-unidecode
+replace#global#make.*install$#& \\n rm -rf "$pkgdir/usr/bin/units_cur"

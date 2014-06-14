@@ -1,0 +1,3 @@
+remove#arch#any
+add#arch#x86_64
+add#provides#libesedb

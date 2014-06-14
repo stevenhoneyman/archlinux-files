@@ -1,0 +1,4 @@
+remove#makedepends#pygtk            
+remove#optdepends#pygtk: zenmap
+replace#global#.\/configure#& --disable-nls --without-zenmap
+remove#global#rm.*uninstall_zenmap$

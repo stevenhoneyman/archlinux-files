@@ -1,0 +1,7 @@
+remove#depends#perl-libwww
+add#makedepends#intltool
+add#makedepends#autoconf
+add#makedepends#bzip2
+add#options#strip
+replace#global#build() {#prepare() { \\n cd "$srcdir\/icoutils-$pkgver" \\n sed -i 's\/extresso\/\/' .\/Makefile.am \\n	autoreconf -fi \\n } \\n\\n build() {
+replace#global#.\/configure#& --disable-nls

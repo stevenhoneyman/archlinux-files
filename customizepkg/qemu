@@ -1,0 +1,25 @@
+remove#makedepends#libpulse
+remove#makedepends#libcacard
+remove#makedepends#libseccomp
+remove#makedepends#seabios
+remove#makedepends#bluez-libs
+remove#makedepends#spice
+remove#makedepends#spice-protocol
+
+remove#global#'libpulse'
+remove#global#'seabios'
+remove#global#'bluez-libs'
+remove#global#'spice'
+remove#global#'libcacard'
+remove#global#'libseccomp'
+
+replace#global#!strip#strip
+
+replace#global#--audio-drv-list='pa alsa sdl'#--audio-drv-list='alsa sdl'
+replace#global#--enable-docs#--disable-docs
+replace#global#--enable-seccomp#--disable-seccomp
+replace#global#--enable-spice#--disable-spice
+
+replace#global#--enable-tpm#& --disable-werror --disable-user --disable-libnfs --disable-smartcard-nss --disable-guest-agent --disable-libssh2 --disable-vhdx --disable-quorum --disable-bluez --disable-xen --disable-virtfs --enable-sdl --disable-curses --target-list="i386-softmmu x86_64-softmmu"
+
+replace#global#rm -r "${pkgdir}\/var"#rm -rf "${pkgdir}\/var"

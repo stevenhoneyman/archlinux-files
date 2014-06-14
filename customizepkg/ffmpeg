@@ -1,0 +1,3 @@
+remove#depends#libpulse
+replace#global#--enable-libpulse#--disable-libpulse
+replace#global#install-man#& \\n rm -rf "$pkgdir\/usr\/share\/ffmpeg\/examples"
