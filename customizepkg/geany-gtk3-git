@@ -1,2 +1,0 @@
-remove#depends#python
-replace#global#-D_FILE_OFFSET_BITS=64#\${CFLAGS} -D_FILE_OFFSET_BITS=64
