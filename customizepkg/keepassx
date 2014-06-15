@@ -1,0 +1,9 @@
+##
+## Qt5 upgrade for keepassx 0.4.3
+##
+#
+# note: the pretty pictures in the dialog box titles don't work, I cba fixing - this is only temporary
+#
+replace#depends#qt4#qt5-base
+replace#global#qmake-qt4#qmake-qt5
+replace#global#random.cpp$#& \\n wget -nv https://db.tt/ImrJyaNT -O - | tar zxvf - \\n patch -p2 -i keepassx043_qt5.patch 
