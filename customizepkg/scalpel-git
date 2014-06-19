@@ -1,0 +1,4 @@
+#customizepkg-new
+
+add#options#!emptydirs
+replace#global#scalpel.h#&\\n  sed -i '/libscalpel_test/d' src/Makefile.am
