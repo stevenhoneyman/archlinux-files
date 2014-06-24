@@ -1,0 +1,8 @@
+#customizepkg-new
+
+# 
+# Package: leafpad
+# Version: 0.8.18.1
+# 
+
+replace#global#--enable-chooser#& --disable-print --disable-nls
