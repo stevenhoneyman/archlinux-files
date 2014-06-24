@@ -1,4 +1,3 @@
 remove#depends#libthai
 remove#makedepends#gtk-doc
-
-replace#global#.*configure#& --with-dynamic-modules=basic --enable-gtk-doc-html=no
+replace#build#.*configure#& --with-dynamic-modules=basic --enable-gtk-doc-html=no

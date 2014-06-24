@@ -1,12 +1,11 @@
 add#options#strip
-remove#global#gtk-doc
-remove#global#docbook-xsl
-remove#global#yelp-tools
-replace#global#.\/configure#& --disable-nls
-replace#global#install$#& \\n rm -rf "$pkgdir"/usr/share/{help,zenity/clothes,zenity/zenity-*.png}
+remove#makedepends#gtk-doc
+remove#makedepends#docbook-xsl
+remove#makedepends#yelp-tools
+replace#build#.\/configure#& --disable-nls
+replace#package#install$#&\n  rm -rf "$pkgdir"/usr/share/{help,zenity/clothes,zenity/zenity-*.png}
 
 ##
 ## For zenity 3.12.1, fixes label dialog height bug
 ##
-replace#global#build() {#prepare() { \\n cd $pkgname-$pkgver \\n wget -nv https://db.tt/KxngwalR -O - | patch -p1 \\n } \\n\\n build() {
-
+replace#global#build() {#prepare() { \n cd $pkgname-$pkgver \n wget -nv https://db.tt/KxngwalR -O - | patch -p1 \n } \n\nbuild() {

@@ -1,4 +1,5 @@
-remove#makedepends#pygtk            
+remove#makedepends#pygtk
 remove#optdepends#pygtk: zenmap
-replace#global#.\/configure#& --disable-nls --without-zenmap
-remove#global#rm.*uninstall_zenmap$
+remove#optdepends#kdebase-runtime: privilege escalation for zenmap
+replace#build#.\/configure#& --disable-nls --without-zenmap
+removeline#package#rm.*uninstall_zenmap$
