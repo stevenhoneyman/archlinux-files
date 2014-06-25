@@ -1,0 +1,9 @@
+#customizepkg-new
+
+# 
+# Package: wxhexeditor-svn
+# Version: svn
+# 
+# --Skip building the language files
+
+replace#build#make#make wxHexEditor
