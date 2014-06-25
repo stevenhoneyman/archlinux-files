@@ -1,0 +1,16 @@
+#customizepkg-new
+
+# 
+# Package: glances
+# Version: 2.0.1
+# 
+# -- Did I mention that I really hate python?!
+
+add#options#!emptydirs
+replace#depends#'python'#'python2'
+replace#depends#'python-psutil'#'python2-psutil'
+remove#depends#'python-setuptools'
+add#makedepends#python2-setuptools
+replace#package#python.*$#find . -type f -name "*.py" -exec sed -i "s/env python/env python2/" {} \\; \n&
+replace#package#^python#python2
+replace#package#images}$#&\n rm -r "$pkgdir/usr/share/locale/de" \n  echo "/usr/bin/python2 -m glances" >"$pkgdir/usr/bin/glances"
