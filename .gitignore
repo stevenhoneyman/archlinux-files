@@ -7,4 +7,5 @@ pkg/
 src/
 customizepkg/_*
 customizepkg/*.example
-
+*.old
+*.bak
