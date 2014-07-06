@@ -6,6 +6,7 @@ arch=('i686' 'x86_64')
 url="http://udis86.sourceforge.net/"
 license=('BSD')
 depends=('python2')
+options=('staticlibs')
 source=('https://downloads.sourceforge.net/udis86/udis86-1.7.2.tar.gz')
 sha1sums=('f55dec2d5319aac9d0a7ae2614ddcc7aa73d3744')
 
