@@ -6,4 +6,4 @@
 # 
 # --Skip building the language files
 
-replace#build#make#make wxHexEditor
+replace#build#make#sed -i "/^LANGUAGEDIRS=/d" ./Makefile\n  make wxHexEditor

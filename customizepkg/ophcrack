@@ -3,4 +3,4 @@
 ##
 replace#depends#qt4#qt5-base
 replace#global#--enable-graph#--disable-graph
-replace#global#build() {#prepare() { \\n cd $pkgname-$pkgver \\n wget -nv https://db.tt/faUseaf9 -O - | tar zxvf - \\n patch -p1 -i ophcrack_qt5.patch \\n mv *5.m4 config/ \\n autoreconf \\n } \\n\\n build() {
+replace#global#build() {#prepare() { \n cd $pkgname-$pkgver \n wget -nv https://db.tt/faUseaf9 -O - | tar zxvf - \n patch -p1 -i ophcrack_qt5.patch \n mv *5.m4 config/ \n autoreconf \n } \n\n build() {
