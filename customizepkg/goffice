@@ -1,3 +1,0 @@
-remove#makedepends#gtk-doc
-remove#depends#libspectre
-replace#global#--enable-introspection#& --disable-nls

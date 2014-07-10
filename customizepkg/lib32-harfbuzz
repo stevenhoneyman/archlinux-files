@@ -1,2 +1,0 @@
-remove#depends#lib32-icu
-replace#global#--without-cairo#& --enable-introspection=no --with-gobject=no --with-icu=no --disable-gtk-doc

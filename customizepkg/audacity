@@ -1,3 +1,0 @@
-remove#depends#ffmpeg-compat
-remove#global#PKG_CONFIG_PATH\\+="\/usr\/lib\/ffmpeg-compat\/pkgconfig"
-replace#global#--prefix=\/usr#& --with-libmad --without-midi --without-ffmpeg --disable-nls

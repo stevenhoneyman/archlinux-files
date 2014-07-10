@@ -1,2 +1,0 @@
-remove#global#rm "$pkgdir\/usr\/bin\/pygmentize"
-remove#makedepends#python2-setuptools

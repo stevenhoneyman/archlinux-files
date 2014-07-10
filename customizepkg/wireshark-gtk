@@ -1,4 +1,0 @@
-remove#depends#portaudio
-remove#makedepends#portaudio
-replace#global#--with-portaudio#--without-portaudio
-

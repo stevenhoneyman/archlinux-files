@@ -1,3 +1,0 @@
-remove#depends#gtk2
-add#depends#gtk3
-replace#global#.\/configure#& --enable-gtk3

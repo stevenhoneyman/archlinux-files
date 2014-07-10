@@ -1,6 +1,0 @@
-remove#depends#libpulse
-remove#makedepends#damageproto
-remove#makedepends#xmlto
-remove#makedepends#docbook-xsl
-replace#build#PULSEAUDIO=ON#PULSEAUDIO=OFF
-replace#package#make.*install#&\n  rm -rf "$pkgdir/usr/include"

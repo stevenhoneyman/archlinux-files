@@ -1,14 +1,7 @@
 archlinux-files
 ===============
 
-Stuff I've written specifically for Arch Linux (AUR packages etc)
+This used to contain stuff I'd written for Arch Linux (AUR packages etc).
+I'll leave this here for now to keep the commit history intact.
 
-
-
-
----
-
-2014-06-15:
-	customizepkg scripts I'm running through "customizepkg-new" variant
-	at the moment https://aur.archlinux.org/packages/customizepkg-new
-
+As of 2014-07-09 it will be no longer updated.

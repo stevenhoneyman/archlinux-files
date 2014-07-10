@@ -1,4 +1,0 @@
-remove#global#colord
-remove#global#libcups
-add#options#strip
-replace#global#--enable-wayland-backend#& --disable-colord --disable-cups --disable-gtk-doc

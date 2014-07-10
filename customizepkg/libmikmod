@@ -1,2 +1,0 @@
-remove#global#libpulse
-replace#global#--disable-static#& --disable-pulseaudio

@@ -1,3 +1,0 @@
-remove#depends#libfm-gtk-git
-add#depends#libfm
-replace#global#configure#& --disable-nls
